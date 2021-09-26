@@ -6,6 +6,7 @@ import Series from './routes/series';
 import Account from './routes/account';
 import Favorites from './routes/favorites';
 import WishList from './routes/wishList';
+import Auth from './routes/auth';
 
 const database = require('./config/database');
 const Table = require('./database/table');
@@ -23,5 +24,6 @@ app.use('/series', Series);
 app.use('/account', Account);
 app.use('/favorites', Favorites);
 app.use('/wishList', WishList);
+app.use('/auth', Auth);
 
 app.listen(3000);
